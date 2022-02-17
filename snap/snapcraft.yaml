@@ -1,23 +1,21 @@
 name: pyqt5-runtime-core20 
 version: '20.04'
 summary: PyQt5 runtime stack based on core20. 
-description: |
-  This snap is to be consumed by various PyQt5 apps which uses Qt 5.9+.
-  Qt provides C++ classes and QML types for rendering GUI.
+description: This snap is to be consumed by various PyQt5 apps which uses Qt 5.9+ Qt provides C++ classes and QML types for rendering GUI.
 grade: stable 
 confinement: strict 
 base: core20
-
 
 architectures:
   - build-on: amd64
     run-on: amd64
 
 slots: 
-  pyqt5-runtime:
+  pyqt5-runtime-core20:
     interface: content
     read: 
       - /
+
 parts:
   desktop-qt5:
      source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
