@@ -42,8 +42,6 @@ parts:
       - xdg-user-dirs
       - libglu1-mesa
       - libslang2
-      - libcdio17
-      - libvpx5
       - python3-pyqt5 #Dist python3 PyQt5 Binding(uses desktop-qt5 .SO's)
       - qt5-gtk-platformtheme #Platform themes plugin
       
@@ -60,8 +58,10 @@ parts:
      plugin: nil
      after: [mpv-ppa]
      stage-packages:
-           - mpv # this is ppa version of mpv
-           - ffmpeg # used by y2mate for merging audio video
+           - libcdio17
+           - libvpx5
+           - mpv
+           - ffmpeg
 
   cleanup:
      after: 
