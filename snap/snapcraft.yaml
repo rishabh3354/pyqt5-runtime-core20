@@ -44,22 +44,10 @@ parts:
       - libslang2
       - python3-pyqt5 #Dist python3 PyQt5 Binding(uses desktop-qt5 .SO's)
       - qt5-gtk-platformtheme #Platform themes plugin
-      
-  mpv-ppa:
-     plugin: nil
-     override-pull: |
-       snapcraftctl pull
-       apt install wget
-       echo "deb http://ppa.launchpad.net/mc3man/mpv-tests/ubuntu bionic main" >>  /etc/apt/sources.list
-       wget -qO - http://ktechpit.com/USS/Olivia/snapcraft/mpv.key | apt-key add -
-       apt update
-       
+
   deps:
      plugin: nil
-     after: [mpv-ppa]
      stage-packages:
-           - libcdio17
-           - libvpx5
            - mpv
            - ffmpeg
 
