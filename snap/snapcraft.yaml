@@ -1,4 +1,4 @@
-name: pyqt5-runtime 
+name: pyqt5-runtime-core20 
 version: '20.04'
 summary: PyQt5 runtime stack based on core20. 
 description: |
