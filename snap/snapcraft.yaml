@@ -27,22 +27,23 @@ parts:
       - qtbase5-dev
       - dpkg-dev
      stage-packages:
-      - libxkbcommon0
-      - ttf-ubuntu-font-family
-      - dmz-cursor-theme
-      - light-themes
-      - adwaita-icon-theme
-      - gnome-themes-standard
-      - shared-mime-info
-      - libdb5.3
-      - libgdk-pixbuf2.0-0
-      - locales-all
-      - xdg-user-dirs
-      - libglu1-mesa
-      - libslang2
-      - gsettings-desktop-schemas
-      - python3-pyqt5 #Dist python3 PyQt5 Binding(uses desktop-qt5 .SO's)
-      - qt5-gtk-platformtheme #Platform themes plugin
+       - adwaita-icon-theme
+       - dmz-cursor-theme
+       - gnome-themes-standard
+       - gsettings-desktop-schemas
+       - libdb5.3
+       - libgdk-pixbuf2.0-0
+       - libglib2.0-0
+       - libglu1-mesa
+       - libslang2
+       - libxkbcommon0
+       - light-themes
+       - locales-all
+       - python3-pyqt5 #Dist python3 PyQt5 Binding(uses desktop-qt5 .SO's)
+       - qt5-gtk-platformtheme #Platform themes plugin
+       - shared-mime-info
+       - ttf-ubuntu-font-family
+       - xdg-user-dirs
 
   deps:
      plugin: nil
