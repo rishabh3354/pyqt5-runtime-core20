@@ -44,6 +44,7 @@ parts:
        - shared-mime-info
        - ttf-ubuntu-font-family
        - xdg-user-dirs
+       - samba-libs
 
   deps:
      plugin: nil
