@@ -39,7 +39,7 @@ parts:
        - libxkbcommon0
        - light-themes
        - locales-all
-#       - python3-pyqt5 #Dist python3 PyQt5 Binding(uses desktop-qt5 .SO's)
+       - python3-pyqt5 #Dist python3 PyQt5 Binding(uses desktop-qt5 .SO's)
        - qt5-gtk-platformtheme #Platform themes plugin
        - shared-mime-info
        - ttf-ubuntu-font-family
